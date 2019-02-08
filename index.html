@@ -1,0 +1,21 @@
+<head>
+  <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+  <title>My LIFF app</title>
+  <script>
+    liff.init(
+      data => {
+        // Now you can call LIFF API
+        const userId = data.context.userId;
+        console.log(userId);
+        liff.closeWindow();
+      },
+      err => {
+        console.log(err);
+        // LIFF initialization failed
+      }
+    );
+  </script>
+</head>
+<body>
+  Hello
+</body>
